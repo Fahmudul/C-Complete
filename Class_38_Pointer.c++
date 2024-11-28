@@ -10,5 +10,14 @@ int main()
   std::string *pName = &name;
   // Printing the memory address of name variable using *pName pointer variable
   std::cout << *pName;
+
+   int x = 10;
+  int *p = &x; // p points to x
+  cout << *p;  // Outputs the value of x (10)
+
+  // dynamic memory allocation
+  int *ptr = new int; // Allocates memory for a single integer
+  *ptr = 10;          // Assigns value 20
+  delete ptr;         // Frees allocated memory
   return 0;
 }
